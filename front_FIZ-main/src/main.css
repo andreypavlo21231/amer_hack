@@ -1,0 +1,93 @@
+:root {
+  --titleFont: 'Inter';
+  --textFont: 'Monsterrat';
+  --backgroundBody: url('./img/background.png');
+  --linkColor: #fff;
+  --buttonTextColor: #fff;
+  --mainTitleColor: #fff;
+  --authButtonColorText: #2148C0;
+  --authButtonBackground: #fff;
+  --linkColorInverted: #000; /* Inverted color */
+  --buttonTextColorInverted: #000; /* Inverted color */
+  --mainTitleColorInverted: #000; /* Inverted color */
+  --authButtonColorTextInverted: #fff; /* Inverted color */
+  --authButtonBackgroundInverted: #2148C0;
+  --floatingLabelColorText: #fff;
+  --formInputColor: #fff;
+}
+
+body {
+  background: var(--backgroundBody);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: var(--linkColor);
+}
+
+h1, h2, h3, h4, h5, .button-black, ul, li {
+  font-family: var(--titleFont);
+}
+
+a, span, p, input, label, button, table {
+  font-family: var(--textFont);
+}
+
+.fixed-container {
+  margin-left: 95px;
+  margin-right: 95px;
+}
+
+.button-black {
+  border-radius: 8px;
+  background: #000;
+  color: var(--buttonTextColor);
+  font-weight: 500;
+  line-height: 130%; /* 31.2px */
+}
+
+.main__commencement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__title {
+  color: var(--mainTitleColor);
+  font-size: calc(40px + (24 * (100vw - 768px) / 1152));
+  font-weight: 700;
+}
+
+.main__commencement--under-line {
+  height: 1px;
+  background: #E6E6E6;
+  margin-top: 16px;
+  width: 95%;
+  margin-bottom: 60px;
+}
+
+.worker__card-description {
+  word-wrap: break-word;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Regular.otf') format('opentype');
+  font-size: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Monsterrat';
+  src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+  font-size: normal;
+  font-weight: normal;
+}
+
+@media (min-width: 1920px) {
+  .form__input {
+    min-height: 100px;
+  }
+}

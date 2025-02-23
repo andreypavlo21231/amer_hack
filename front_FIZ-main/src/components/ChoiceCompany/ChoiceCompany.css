@@ -1,0 +1,86 @@
+.choice-company__container {
+    margin-bottom: 5%;
+}
+
+.choice-company__block {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 
+                -0.25rem -0.25rem 0.5rem rgba(255, 255, 255, 0.9);
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1.25rem 0;
+    cursor: pointer;
+  }
+  
+  .choice-company__block:hover {
+    transform: scale(1.03);
+    box-shadow: 0.375rem 0.375rem 0.75rem rgba(0, 0, 0, 0.2), 
+                -0.375rem -0.375rem 0.75rem rgba(255, 255, 255, 0.9);
+  }
+
+  .choice-company__search {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .choice-company__search-input {
+    width: 85%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .choice-company__search-input:focus {
+    outline: none;
+    box-shadow: 0 0 0.5rem rgba(0, 123, 255, 0.5);
+  }
+  
+  .choice-company__no-results {
+    color: #999;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }  
+  
+  .choice-company__logo {
+    flex: 0 0 10%;
+    margin-right: 5%;
+  }
+  
+  .choice-company__logo-image {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.2rem solid #eaeaea;
+  }
+  
+  .choice-company__description {
+    flex: 1;
+    color: #333;
+  }
+  
+  .choice-company__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+    color: #2c3e50;
+  }
+  
+  .choice-company__description-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0.3125rem 0;
+  }
+  
+  .choice-company__description-text.salary {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
